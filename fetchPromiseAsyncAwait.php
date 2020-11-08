@@ -4,6 +4,46 @@
 <body>
 <script>
 
+	let url = "http://worldapi.test/api/countries";
+
+	/*fetch(url)
+		.then((response1) => {
+			return response1;
+		})
+		.then((response1) => {
+			
+			return [response1, fetch(url)];
+
+		})
+		.then((arr) => {
+
+			return arr[0].json();
+			
+		})
+		.then((data) => {
+			
+			console.log(data);
+
+		});*/
+
+	/*let f1 = fetch(url);
+	let f2 = fetch(url);
+	let f3 = fetch(url);
+
+	Promise.all([f1.then((response) => {
+		return response.json();
+	}), f2.then((response) => {
+		return response.json();
+	}), f3.then((response) => {
+		return response.json();
+	})]).then(([f1, f2, f3]) => {
+
+		console.log(f1,", ", f2,", ", f3);
+
+	}).catch((err) => {
+		console.log(err);
+	});*/
+
 	function doubleAfter2Seconds(x) {
 	  return new Promise(resolve => {
 		setTimeout(() => {
@@ -40,7 +80,7 @@
 	}
 
 	//getData('https://en.wikipedia.org/w/api.php?&origin=*&action=opensearch&search=Serbia&limit=5');
-	getData('http://worldapi.test/api/countries ');
+	//getData('http://worldapi.test/api/countries ');
 
 	// Example POST method implementation:
 	async function postData(url = '', data = {}) {
